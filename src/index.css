@@ -1,0 +1,106 @@
+/* index.css */
+
+body {
+  background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDJmdjA4eXpnb2xobmltYm85ankwZWlmOXdwOHJkNzhqNno5M3c1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YnZPEeeC7q6pQEZw1I/giphy.webp");
+}
+
+h1{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-family: 'Rubik', sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  transition: font-weight 250ms ease-in-out;
+}
+
+h1:hover{
+  font-weight: 900;
+}
+
+.board {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  font-size: 36px;
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Colors for X and O */
+.square.X {
+  color: #f44336; /* Red */
+}
+
+.square.O {
+  color: #2196f3; /* Blue */
+}
+
+.restart {
+  margin-top: 20px; /* Adjust spacing from the game board */
+  font-size: 16px;
+  padding: 10px 20px; /* Adjust padding for button size */
+  background-color: #0372b8; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.restart:hover {
+  background-color: #01426b; /* Darker green on hover */
+}
+
+/* App.css */
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.home {
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.play-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0372b8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #01426b;
+}
